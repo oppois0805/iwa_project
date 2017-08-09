@@ -1,0 +1,269 @@
+extends templates/_layout.pug
+
+block main
+    .container-full.iwa
+        .iwa_h.fixed-top.d-flex.justify-content-center
+            nav.navbar.navbar-toggleable-md.navbar-light.d-flex.justify-content-around.iwa_h_n
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .iwa_h_logo
+                    a(href="#") 111
+                        img(src="images/IWA_logo.svg")
+                #navbarsExampleDefault.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item.px-2.dropdown
+                            a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 解決方案
+                            .dropdown-menu(aria-labelledby='dropdown01')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item.px-2.dropdown
+                            a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 系統方案
+                            .dropdown-menu(aria-labelledby='dropdown01')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item.px-2.dropdown
+                            a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 硬體產品
+                            .dropdown-menu(aria-labelledby='dropdown01')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item.px-2.dropdown
+                            a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 關於我們
+                            .dropdown-menu(aria-labelledby='dropdown01')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                a.dropdown-item(href='#') Something else here
+                .iwa_h_lang
+                    label
+                        img(src="images/language.svg")
+                        | 繁中
+        .iwa_c
+            .iwa_c_carousel
+                #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+                    .carousel-inner(role='listbox')
+                        .carousel-item.active
+                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_bar_01.png', alt='First slide')
+                            .carousel-caption.d-md-block.transform.transform10--top
+                                .iwa_c_carousel_content
+                                    h2 建築工程與智慧系統的完美結合
+                                    br
+                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    a(href="#")
+                                        .iwa_c_carousel_more
+                                            .bt.bt--more
+                        .carousel-item
+                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_panel_building.png', alt='Second  slide')
+                            .carousel-caption.d-md-block
+                                .iwa_c_carousel_content
+                                    h2 建築工程與智慧系統的完美結合
+                                    br
+                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    a(href="#")
+                                        .iwa_c_carousel_more
+                                            .bt.bt--more
+                        .carousel-item
+                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_bar_01.png', alt='Third slide')
+                            .carousel-caption.d-md-block
+                                .iwa_c_carousel_content
+                                    h2 建築工程與智慧系統的完美結合
+                                    br
+                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    a(href="#")
+                                        .iwa_c_carousel_more
+                                            .bt.bt--more
+                    a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
+            .container.iwa_c_content
+                .row.iwa_c_content_first.transform.transform5--top
+                    .col-lg-6.iwa_c_content_first_l.transform.transform20--left
+                        | HOW
+                        br
+                        | WE
+                        br
+                        | WORK
+                    .col-lg-6.iwa_c_content_first_r.transform.transform20--right
+                        h2 建築工程與智慧系統的完美結合
+                        br
+                        p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+            .container.iwa_c_content
+                .iwa_c_content_second
+                    .col-lg-12.text-center.iwa_title.transform.transform10--top
+                        span    我們的顧客
+                        br
+                        span    我們很榮幸能與多家頂級公用事業和能源供應商合作。
+                    .card-deck
+                        .card.transform.transform20--left
+                            img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
+                            .card-block
+                                h4.card-title 智慧公共園區
+                                p.card-text
+                                    | 智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。
+                            .card-footer
+                                img(src="../images/customer-logo.jpg")
+                        .card.transform.transform20--top
+                            img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
+                            .card-block
+                                h4.card-title 商業辦公大樓
+                                p.card-text 智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。
+                            .card-footer
+                                img(src="../images/customer-logo.jpg")
+                        .card.transform.transform20--right
+                            img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
+                            .card-block
+                                h4.card-title 單一辦公區域
+                                p.card-text
+                                    | 創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。
+                            .card-footer
+                                img(src="../images/customer-logo.jpg")
+
+            .container.iwa_c_content
+                .iwa_c_content_second
+                    .col-lg-12.text-center.iwa_title.transform.transform10--top
+                        span   想節省錢，改善運營?
+                        br
+                        span   我們的方案有
+                    .card-deck
+                        .card.transform.transform20--left
+                            img.card-img-top(src='images/Park.png', alt='Card image cap')
+                            .card-block
+                                h4.card-title 智慧公共園區
+                                p.card-text
+                                    | 智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。
+                            .card-footer
+                                .bt.bt--more.mx-auto
+                        .card.transform.transform20--top
+                            img.card-img-top(src='images/Building.png', alt='Card image cap')
+                            .card-block
+                                h4.card-title 商業辦公大樓
+                                p.card-text 智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。
+                            .card-footer
+                                .bt.bt--more.mx-auto
+                        .card.transform.transform20--right
+                            img.card-img-top(src='images/Space.png', alt='Card image cap')
+                            .card-block
+                                h4.card-title 單一辦公區域
+                                p.card-text
+                                    | 創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。
+                            .card-footer
+                                .bt.bt--more.mx-auto
+            .container.iwa_c_content
+                .iwa_c_content_second
+                    .col-lg-12.text-center.iwa_title.transform.transform10--top
+                        span    量身訂做的規劃
+                        br
+                        span    Building OS
+                    .col-lg-12.buidingOS
+                        .imac.transform.transform20--bottom
+                            img(src="images/i-mac.png")
+                        .ipad.transform.transform20--bottom
+                            img(src="images/i-pad-pro.png")
+                        .iphone.transform.transform20--bottom
+                            img(src="images/i-phone.png")
+            .iwa_c_content.iwa_c_content--system
+                .iwa_title.text-center.transform.transform10--top
+                    span   量身訂做的規劃，有效系統整合
+                    br
+                    span   系統特色
+                .container.iwa_c_content_three
+                    .row
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 智慧照明
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 能源管理
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 空調優化
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 智慧窗簾
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 影像安防
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 停車管理
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 冷凍冷藏預警
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
+                            | 智慧路燈
+            .iwa_c_content.iwa_c_content--foolter
+                .row
+                    .col-lg-2.col-12
+                        div 解決方案
+                        ul
+                            li 辦公
+                            li 智慧園區
+                            li 商業空間
+                    .col-lg-2.col-12
+                        div 系統方案
+                        ul
+                            li 智慧照明
+                            li 智慧窗簾
+                            li 停車管理
+                            li 空調優化
+                            li 能源管理
+                            li 影像安防
+                            li 冷凍冷藏預警
+                            li 智慧路燈
+                    .col-lg-2.col-12
+                        div 硬體產品
+                        ul
+                            li 三合一無線感測器
+                            li IWA Cube
+                            li Zigbee 閘道器
+                            li Lux-Sensor 
+                            li IWA Kit
+                    .col-lg-2.col-12
+                        div 關於我們
+                        ul
+                            li 關於我們
+                            li 聯繫據點
+                            li 型錄下載 
+                    .col-lg-4.col-12
+                        div
+                            img(src="images/IWA_logo.svg")
+                        label 
+                            img(src="images/phone.svg")
+                            span +886 2-6626-0678 ext.56214
+                        label 
+                            img(src="images/mail.svg")
+                            span IST_Service@chiconypower.com.tw
+    .bt-gotop#mybtn(onclick='scrollToTop(500)',title='GO to top') top
+block script
+    script.
+        $(function(){
+            $(".transform").inViewport(function(px){
+                if(px) $(this).addClass("action") ;
+            });
+            $('.iwa_c_content--foolter > .row > .col-lg-2').on( "click", function() {
+                $(this).toggleClass("active");
+            });
+        })
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("mybtn").style.display = "block";
+            } else {
+                document.getElementById("mybtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function scrollToTop(scrollDuration) {
+             var scrollStep = -window.scrollY / (scrollDuration / 15),
+                scrollInterval = setInterval(function(){
+                if ( window.scrollY != 0 ) {
+                    window.scrollBy( 0, scrollStep );
+                }
+                else clearInterval(scrollInterval); 
+            },15);
+        }
+
+

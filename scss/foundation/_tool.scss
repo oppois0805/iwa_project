@@ -1,0 +1,36 @@
+ @include breakpoint(992px) {
+     .transform {
+         opacity: 0;
+         transition: all .8s;
+         &.action {
+             opacity: 1;
+             transform: translateX(0%);
+         }
+     }
+     //10
+     .transform10--left {
+         transform: translateX(-10%);
+     }
+     .transform10--right {
+         transform: translateX(-10%);
+     }
+     .transform10--top {
+         transform: translateY(-10%);
+     }
+     .transform10--bottomtop {
+         transform: translateY(-10%);
+     }
+     //20
+     .transform20--left {
+         transform: translateX(-20%);
+     }
+     .transform20--right {
+         transform: translateX(20%);
+     }
+     .transform20--top {
+         transform: translateY(-20%);
+     }
+     .transform20--bottom {
+         transform: translateY(20%);
+     }
+ }

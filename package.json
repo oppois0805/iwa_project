@@ -1,0 +1,59 @@
+{
+  "name": "iwa",
+  "version": "1.0.0",
+  "sasslintConfig": "config/.sass-lint.yml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-scss-lint": "^0.5.0",
+    "gulp-uglify": "^2.1.0",
+    "jshint": "^2.9.4"
+  },
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.4",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-scss-lint": "^0.5.0",
+    "gulp-uglify": "^2.1.2",
+    "jquery": "^3.2.1",
+    "jshint": "^2.9.4",
+    "node-sass": "^4.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oppois0805/iwa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oppois0805/iwa/issues"
+  },
+  "homepage": "https://github.com/oppois0805/iwa#readme",
+  "description": ""
+}

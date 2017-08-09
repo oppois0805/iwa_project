@@ -1,0 +1,26 @@
+/* ==========================================================================
+   base
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti SC', 'PMingLiU', 'MingLiU', 'DFKai-sb', sans-serif, serif !important;
+    font-weight: normal !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+a {
+    color: $black !important;
+}
+
+//boostrap expansion
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
