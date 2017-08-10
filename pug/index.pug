@@ -36,9 +36,14 @@ block main
                                 a.dropdown-item(href='#') Another action
                                 a.dropdown-item(href='#') Something else here
                 .iwa_h_lang
-                    label
-                        img(src="images/language.svg")
-                        | 繁中
+                    .dropdown
+                        a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 
+                            label
+                                img(src="images/language.svg")
+                                span.ml-2 繁中
+                        .dropdown-menu(aria-labelledby='dropdown01')
+                            a.dropdown-item.text-center(href='#') 英文
+                            a.dropdown-item.text-center(href='#') 繁中
         .iwa_c
             .iwa_c_carousel
                 #carouselExampleIndicators.carousel.slide(data-ride="carousel")
@@ -176,22 +181,38 @@ block main
                     span   系統特色
                 .container.iwa_c_content_three
                     .row
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 智慧照明
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 能源管理
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 空調優化
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 智慧窗簾
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 影像安防
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 停車管理
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 冷凍冷藏預警
-                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform10--right
-                            | 智慧路燈
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--light
+                                span.ml-4 智慧照明
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--energy
+                                span.ml-4 能源管理
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--hvac
+                                span.ml-4 空調優化
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--blinds
+                                span.ml-4 智慧窗簾
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--eye
+                                span.ml-4 影像安防
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--parking
+                                span.ml-4 停車管理
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--freezing
+                                span.ml-4 冷凍冷藏預警
+                        .col-lg-3.col-12.d-flex.justify-content-center.align-items-center.transform.transform20--left
+                            label.d-flex.justify-content-center.align-items-center
+                                .icon.icon--streetlight
+                                span.ml-4 智慧路燈
             .iwa_c_content.iwa_c_content--foolter
                 .row
                     .col-lg-2.col-12
@@ -228,12 +249,12 @@ block main
                     .col-lg-4.col-12
                         div
                             img(src="images/IWA_logo.svg")
-                        label 
+                        label.d-block 
                             img(src="images/phone.svg")
-                            span +886 2-6626-0678 ext.56214
-                        label 
+                            span.ml-2 +886 2-6626-0678 ext.56214
+                        label.d-block
                             img(src="images/mail.svg")
-                            span IST_Service@chiconypower.com.tw
+                            span.ml-2 IST_Service@chiconypower.com.tw
     .bt-gotop#mybtn(onclick='scrollToTop(500)',title='GO to top') top
 block script
     script.
