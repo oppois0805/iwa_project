@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+
+// -------------------------------------
+//   @mixin
+// -------------------------------------
+@mixin mask($url) {
+    -webkit-mask: url($url) no-repeat 50% 50%;
+    mask: url($url) no-repeat 50% 50%;
+    background-color: #808080;
+}
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+.icon {
+    width: 50px;
+    height: 50px;
+    transition: all .8s;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+.icon--light {
+    @include mask('../Images/lighting-m-icon.svg');
+}
+
+.icon--energy {
+    @include mask('../Images/energy-m-icon.svg');
+}
+
+.icon--hvac {
+    @include mask('../Images/hvac-m-icon.svg');
+}
+
+.icon--blinds {
+    @include mask('../Images/blinds-m-icon.svg');
+}
+
+.icon--eye {
+    @include mask('../Images/image-m-icon.svg');
+}
+
+.icon--parking {
+    @include mask('../Images/parking-m-icon.svg');
+}
+
+.icon--freezing {
+    @include mask('../Images/freezing-m-icon.svg');
+}
+
+.icon--streetlight {
+    @include mask('../Images/streetlight-m-icon.svg');
+}

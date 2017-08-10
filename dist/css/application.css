@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ==========================================================================
+   tool
+   ========================================================================== */
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @media (min-width: 992px) {
   .transform {
@@ -443,6 +446,54 @@ a {
   width: 100%; }
 
 /* ==========================================================================
+   Icon
+   ========================================================================== */
+.icon {
+  width: 50px;
+  height: 50px;
+  transition: all .8s; }
+
+.icon--light {
+  -webkit-mask: url("../Images/lighting-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/lighting-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--energy {
+  -webkit-mask: url("../Images/energy-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/energy-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--hvac {
+  -webkit-mask: url("../Images/hvac-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/hvac-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--blinds {
+  -webkit-mask: url("../Images/blinds-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/blinds-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--eye {
+  -webkit-mask: url("../Images/image-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/image-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--parking {
+  -webkit-mask: url("../Images/parking-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/parking-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--freezing {
+  -webkit-mask: url("../Images/freezing-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/freezing-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+.icon--streetlight {
+  -webkit-mask: url("../Images/streetlight-m-icon.svg") no-repeat 50% 50%;
+  mask: url("../Images/streetlight-m-icon.svg") no-repeat 50% 50%;
+  background-color: #808080; }
+
+/* ==========================================================================
    撰寫button
    ========================================================================== */
 .bt {
@@ -543,9 +594,13 @@ a {
 
 .iwa_h_lang {
   display: none; }
+  .iwa_h_lang * {
+    cursor: pointer; }
   @media (min-width: 992px) {
     .iwa_h_lang {
-      display: block; } }
+      display: block; }
+      .iwa_h_lang .nav-link {
+        padding: 1.2em 1.2em; } }
 
 .iwa_c {
   flex: 1 1 auto;
@@ -648,17 +703,29 @@ a {
 
 .iwa_c_content_three {
   margin: 51px auto; }
-  .iwa_c_content_three > div {
+  .iwa_c_content_three > .row {
     margin-top: 3vh; }
-    .iwa_c_content_three > div > div {
+    .iwa_c_content_three > .row * {
+      cursor: pointer; }
+    .iwa_c_content_three > .row > div {
       margin: 5px;
+      transition: all .5s;
       background-color: rgba(255, 255, 255, 0.7);
       width: calc(25% - 10px) !important;
       flex: 0 0 0 100%;
       box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
       height: 150px; }
+      .iwa_c_content_three > .row > div > label > span {
+        transition: all .5s;
+        font-size: 1.5rem; }
+      .iwa_c_content_three > .row > div:hover {
+        background-color: #f5ba18; }
+        .iwa_c_content_three > .row > div:hover .icon {
+          background-color: #fff; }
+        .iwa_c_content_three > .row > div:hover > label > span {
+          color: #fff; }
       @media (min-width: 992px) {
-        .iwa_c_content_three > div > div {
+        .iwa_c_content_three > .row > div {
           flex: inherit; } }
 
 .iwa_title span {
