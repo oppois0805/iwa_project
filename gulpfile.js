@@ -104,7 +104,7 @@ gulp.task('lint', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src(['script/jquery.min.js', 'script/tether.min.js', 'script/boostrap.js', 'script/**/*.js'])
+    return gulp.src(['script/jquery.min.js', 'script/popper.min.js', 'script/boostrap.js', 'script/**/*.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename('all.min.js'))

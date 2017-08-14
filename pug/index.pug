@@ -3,14 +3,14 @@ extends templates/_layout.pug
 block main
     .container-full.iwa
         .iwa_h.fixed-top.d-flex.justify-content-center
-            nav.navbar.navbar-toggleable-md.navbar-light.d-flex.justify-content-around.iwa_h_n
-                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
+            nav.iwa_h_n.navbar.navbar-expand-md.navbar-light.iwa_h_n.d-flex.justify-content-around
                 .iwa_h_logo
-                    a(href="#")
-                        img(src="images/IWA_logo.svg")
-                #navbarsExampleDefault.collapse.navbar-collapse
-                    ul.navbar-nav.mr-auto
+                        a(href="#")
+                            img(src="images/IWA_logo.svg")
+                button.custom-toggler.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarsExampleDefault.collapse.navbar-collapse.iwa_h_collapse
+                    ul.navbar-nav
                         li.nav-item.px-2.dropdown
                             a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 解決方案
                             .dropdown-menu(aria-labelledby='dropdown01')
@@ -46,46 +46,49 @@ block main
                             a.dropdown-item.text-center(href='#') 繁中
         .iwa_c
             .iwa_c_carousel
-                #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+                #bootstrap-touch-slider.carousel.slide.bs-slider(data-ride="carousel",data-pause="hover" data-interval="false")
                     ol.carousel-indicators
-                        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
-                        li(data-target='#carouselExampleIndicators', data-slide-to='1')
-                        li(data-target='#carouselExampleIndicators', data-slide-to='2')
-                    .carousel-inner(role='listbox')
+                        li.active(data-target='#bootstrap-touch-slider', data-slide-to='0')
+                        li(data-target='#bootstrap-touch-slider', data-slide-to='1')
+                        li(data-target='#bootstrap-touch-slider', data-slide-to='2')
+                    .carousel-inner
                         .carousel-item.active
-                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_bar_01.png', alt='First slide')
-                            .carousel-caption.d-md-block.transform.transform10--top
-                                .iwa_c_carousel_content
-                                    h2 建築工程與智慧系統的完美結合
+                            img.slide-image(style="width:100%;height:627px",src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png")
+                            .bs-slider-overlay
+                            .carousel-caption
+                                .slide-text
+                                    h2(data-animation="animated fadeInLeft") 1建築工程與智慧系統的完美結合
                                     br
-                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    p(data-animation="animated fadeInRight") 1我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
                                     a(href="#")
                                         .iwa_c_carousel_more
-                                            .bt.bt--more
+                                            .bt.bt--more(data-animation="animated fadeInDown")
                         .carousel-item
-                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_panel_building.png', alt='Second  slide')
-                            .carousel-caption.d-md-block
-                                .iwa_c_carousel_content
-                                    h2 建築工程與智慧系統的完美結合
+                            img.slide-image(style="width:100%;height:627px",src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png")
+                            .bs-slider-overlay
+                            .carousel-caption
+                                .slide-text
+                                    h2(data-animation="animated fadeInLeft") 2建築工程與智慧系統的完美結合
                                     br
-                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    p(data-animation="animated fadeInRight") 2我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
                                     a(href="#")
                                         .iwa_c_carousel_more
-                                            .bt.bt--more
+                                            .bt.bt--more(data-animation="animated fadeInDown")
                         .carousel-item
-                            img.d-block.img-fluid(style="width: 100%;height: 40.5rem;",src='images/main_bar_01.png', alt='Third slide')
-                            .carousel-caption.d-md-block
-                                .iwa_c_carousel_content
-                                    h2 建築工程與智慧系統的完美結合
+                            img.slide-image(style="width:100%;height:627px",src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png")
+                            .bs-slider-overlay
+                            .carousel-caption
+                                .slide-text
+                                    h2(data-animation="animated fadeInLeft") 3建築工程與智慧系統的完美結合
                                     br
-                                    p 我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
+                                    p(data-animation="animated fadeInRight") 3我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。
                                     a(href="#")
                                         .iwa_c_carousel_more
-                                            .bt.bt--more
-                    a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                                            .bt.bt--more(data-animation="animated fadeInDown")
+                    a.carousel-control-prev(style="z-index: 100",href='#bootstrap-touch-slider', role='button', data-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')
                         span.sr-only Previous
-                    a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+                    a.carousel-control-next(style="z-index: 100",href='#bootstrap-touch-slider', role='button', data-slide='next')
                         span.carousel-control-next-icon(aria-hidden='true')
                         span.sr-only Next
             .container.iwa_c_content
@@ -109,7 +112,7 @@ block main
                     .card-deck
                         .card.transform.transform20--left
                             img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 智慧公共園區
                                 p.card-text
                                     | 智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。
@@ -117,14 +120,14 @@ block main
                                 img(src="../images/customer-logo.jpg")
                         .card.transform.transform20--top
                             img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 商業辦公大樓
                                 p.card-text 智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。
                             .card-footer
                                 img(src="../images/customer-logo.jpg")
                         .card.transform.transform20--right
                             img.card-img-top(src='images/customer-pic.jpg', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 單一辦公區域
                                 p.card-text
                                     | 創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。
@@ -140,7 +143,7 @@ block main
                     .card-deck
                         .card.transform.transform20--left
                             img.card-img-top(src='images/Park.png', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 智慧公共園區
                                 p.card-text
                                     | 智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。
@@ -148,14 +151,14 @@ block main
                                 .bt.bt--more.mx-auto
                         .card.transform.transform20--top
                             img.card-img-top(src='images/Building.png', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 商業辦公大樓
                                 p.card-text 智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。
                             .card-footer
                                 .bt.bt--more.mx-auto
                         .card.transform.transform20--right
                             img.card-img-top(src='images/Space.png', alt='Card image cap')
-                            .card-block
+                            .card-body
                                 h4.card-title 單一辦公區域
                                 p.card-text
                                     | 創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。
@@ -258,6 +261,7 @@ block main
     .bt-gotop#mybtn(onclick='scrollToTop(500)',title='GO to top') top
 block script
     script.
+      
         $(function(){
             $(".transform").inViewport(function(px){
                 if(px) $(this).addClass("action") ;
@@ -265,6 +269,11 @@ block script
             $('.iwa_c_content--foolter > .row > .col-lg-2').on( "click", function() {
                 $(this).toggleClass("active");
             });
+            $('.carousel').carousel({
+                interval: 111115000,
+                pause: 'hover'
+            })
+            $('#bootstrap-touch-slider').bsTouchSlider();
         })
         window.onscroll = function() {scrollFunction()};
 
@@ -286,5 +295,3 @@ block script
                 else clearInterval(scrollInterval); 
             },15);
         }
-
-

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "animate-sass": "^0.6.6",
     "breakpoint-sass": "^2.7.1",
     "gulp-add-src": "^0.2.0",
     "gulp-clean-css": "^3.0.3",

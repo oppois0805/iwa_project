@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/application.min.css">
+    <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
     <div class="container-full iwa">
       <div class="iwa_h fixed-top d-flex justify-content-center">
-        <nav class="navbar navbar-toggleable-md navbar-light d-flex justify-content-around iwa_h_n">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <nav class="iwa_h_n navbar navbar-expand-md navbar-light iwa_h_n d-flex justify-content-around">
           <div class="iwa_h_logo"><a href="#"><img src="images/IWA_logo.svg"></a></div>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
+          <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse iwa_h_collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
               <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" id="dropdown01" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">解決方案</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
               </li>
@@ -36,47 +36,50 @@
       </div>
       <div class="iwa_c">
         <div class="iwa_c_carousel">
-          <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+          <div class="carousel slide bs-slider" id="bootstrap-touch-slider" data-ride="carousel" data-pause="hover" data-interval="false">
             <ol class="carousel-indicators">
-              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li class="active" data-target="#bootstrap-touch-slider" data-slide-to="0"></li>
+              <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+              <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active"><img class="d-block img-fluid" style="width: 100%;height: 40.5rem;" src="images/main_bar_01.png" alt="First slide">
-                <div class="carousel-caption d-md-block transform transform10--top">
-                  <div class="iwa_c_carousel_content">
-                    <h2>建築工程與智慧系統的完美結合</h2><br>
-                    <p>我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="slide-image" style="width:100%;height:627px;" src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png">
+                <div class="bs-slider-overlay"></div>
+                <div class="carousel-caption">
+                  <div class="slide-text">
+                    <h2 data-animation="animated fadeInLeft">1建築工程與智慧系統的完美結合</h2><br>
+                    <p data-animation="animated fadeInRight">1我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
                       <div class="iwa_c_carousel_more">
-                        <div class="bt bt--more"></div>
+                        <div class="bt bt--more" data-animation="animated fadeInDown"></div>
                       </div></a>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item"><img class="d-block img-fluid" style="width: 100%;height: 40.5rem;" src="images/main_panel_building.png" alt="Second  slide">
-                <div class="carousel-caption d-md-block">
-                  <div class="iwa_c_carousel_content">
-                    <h2>建築工程與智慧系統的完美結合</h2><br>
-                    <p>我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
+              <div class="carousel-item"><img class="slide-image" style="width:100%;height:627px;" src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png">
+                <div class="bs-slider-overlay"></div>
+                <div class="carousel-caption">
+                  <div class="slide-text">
+                    <h2 data-animation="animated fadeInLeft">2建築工程與智慧系統的完美結合</h2><br>
+                    <p data-animation="animated fadeInRight">2我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
                       <div class="iwa_c_carousel_more">
-                        <div class="bt bt--more"></div>
+                        <div class="bt bt--more" data-animation="animated fadeInDown"></div>
                       </div></a>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item"><img class="d-block img-fluid" style="width: 100%;height: 40.5rem;" src="images/main_bar_01.png" alt="Third slide">
-                <div class="carousel-caption d-md-block">
-                  <div class="iwa_c_carousel_content">
-                    <h2>建築工程與智慧系統的完美結合</h2><br>
-                    <p>我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
+              <div class="carousel-item"><img class="slide-image" style="width:100%;height:627px;" src="http://iwachiconypower-001-site4.htempurl.com/Images/IWA_Index/Top_Rotation/banner/main_banner_mobile_pic_1@3x.png.png">
+                <div class="bs-slider-overlay"></div>
+                <div class="carousel-caption">
+                  <div class="slide-text">
+                    <h2 data-animation="animated fadeInLeft">3建築工程與智慧系統的完美結合</h2><br>
+                    <p data-animation="animated fadeInRight">3我們擁有專業的工程管理團隊及跨國專案執行能力，豐富的樓宇自動化整合經驗及完整的智慧建築系統，已廣泛的應用在各商業空間領域中，讓您不用擔心建築與智慧系統的整合問題。</p><a href="#">
                       <div class="iwa_c_carousel_more">
-                        <div class="bt bt--more"></div>
+                        <div class="bt bt--more" data-animation="animated fadeInDown"></div>
                       </div></a>
                   </div>
                 </div>
               </div>
-            </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+            </div><a class="carousel-control-prev" style="z-index: 100;" href="#bootstrap-touch-slider" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" style="z-index: 100;" href="#bootstrap-touch-slider" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
           </div>
         </div>
         <div class="container iwa_c_content">
@@ -93,21 +96,21 @@
             <div class="col-lg-12 text-center iwa_title transform transform10--top"><span>   我們的顧客</span><br><span>   我們很榮幸能與多家頂級公用事業和能源供應商合作。</span></div>
             <div class="card-deck">
               <div class="card transform transform20--left"><img class="card-img-top" src="images/customer-pic.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">智慧公共園區</h4>
                   <p class="card-text">智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。</p>
                 </div>
                 <div class="card-footer"><img src="../images/customer-logo.jpg"></div>
               </div>
               <div class="card transform transform20--top"><img class="card-img-top" src="images/customer-pic.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">商業辦公大樓</h4>
                   <p class="card-text">智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。</p>
                 </div>
                 <div class="card-footer"><img src="../images/customer-logo.jpg"></div>
               </div>
               <div class="card transform transform20--right"><img class="card-img-top" src="images/customer-pic.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">單一辦公區域</h4>
                   <p class="card-text">創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。</p>
                 </div>
@@ -121,7 +124,7 @@
             <div class="col-lg-12 text-center iwa_title transform transform10--top"><span>  想節省錢，改善運營?</span><br><span>  我們的方案有</span></div>
             <div class="card-deck">
               <div class="card transform transform20--left"><img class="card-img-top" src="images/Park.png" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">智慧公共園區</h4>
                   <p class="card-text">智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區智慧公共園區用者及物業管理者更優質的智能感受。</p>
                 </div>
@@ -130,7 +133,7 @@
                 </div>
               </div>
               <div class="card transform transform20--top"><img class="card-img-top" src="images/Building.png" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">商業辦公大樓</h4>
                   <p class="card-text">智慧建築系統廣泛的應用在商辦大樓、賣場、展會中心、醫療機構、學校、交通運輸中心、百貨公司及飯店等商業空間，提供給員工、消費者、樓宇使用者及物業管理者更優質的智能感受。</p>
                 </div>
@@ -139,7 +142,7 @@
                 </div>
               </div>
               <div class="card transform transform20--right"><img class="card-img-top" src="images/Space.png" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-body">
                   <h4 class="card-title">單一辦公區域</h4>
                   <p class="card-text">創新的IWA Space環境設備監控系統，採用ZigBee無線網路架構，透過物聯網及大數據分析運用。連接終端設備、無線環境傳感器及行動平板，提供快速便捷的建築環境監控管理工具。</p>
                 </div>
@@ -267,6 +270,11 @@
           $('.iwa_c_content--foolter > .row > .col-lg-2').on( "click", function() {
               $(this).toggleClass("active");
           });
+          $('.carousel').carousel({
+              interval: 111115000,
+              pause: 'hover'
+          })
+          $('#bootstrap-touch-slider').bsTouchSlider();
       })
       window.onscroll = function() {scrollFunction()};
       
